@@ -2,20 +2,24 @@
     margin: 0;
     padding: 0;
     border: 0;
-    border: px solid black ;
+    border: 0 solid black ;
     
 }
 body{
     height: 100vh;
-    
-} h1{
-    display: flex;
+}
+
+h1{
     font-size: 3em;
+    text-align: center;
+
+}
+a{
+    font-size: 1.2em;
 }
 .header{
-    height: 100vh;
     background-color: #ffffff;
-        background-image: -webkit-linear-gradient(299.5deg, #ffffff 50%, #707070 50%);
+        background-image: -webkit-linear-gradient(296.5deg, #ffffff 50%, #707070 50%);
 }
 nav{
     display: flex;
@@ -34,26 +38,25 @@ li{
 .about-me{
     height: 100vh;
     display: flex;
-    flex-direction: row-reverse;
     padding:30px;
     font-size: 25px;
-    align-items: center;
     background-color: #ffffff;
-        background-image: -webkit-linear-gradient(120.8deg, #ffffff 50%, #707070 50%);
-
+        background-image: -webkit-linear-gradient(118.8deg, #ffffff 50%, #707070 50%);
+        flex-direction: column;
+        align-items: center;
 }
 
-.aboutme-title{
-
-
-}
-.picture{
-    height: 100%;
+.profile-pic{
     height: 50vh;
     border-radius: 20%;
-    margin-right: 20px;
-    
 }
+.project-box >div{
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    display: flex;
+}
+
 
 .contact-me{
     height: 100vh;
