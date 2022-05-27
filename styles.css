@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    border: 0 solid black ;
+    border: px solid black ;
     
 }
 body{
@@ -15,11 +15,14 @@ h1{
 
 }
 a{
-    font-size: 1.2em;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #616161;
+
 }
 .header{
     background-color: #ffffff;
-        background-image: -webkit-linear-gradient(296.5deg, #ffffff 50%, #707070 50%);
+     
 }
 nav{
     display: flex;
@@ -47,19 +50,100 @@ li{
 }
 
 .profile-pic{
-    height: 50vh;
+    height: 40vh;
     border-radius: 20%;
+    border: 2px solid black;
 }
-.project-box >div{
-    height: 150px;
-    width: 150px;
+/* projects/technologies  */
+.projects{
+background-image: -webkit-linear-gradient(240.8deg, #ffffff 50%, #707070 50%);
+display: flex;
+flex-direction: column;
+    align-items: center;
+}
+
+.project-box{
+    display: flex;
+    justify-content:space-around;
+    
+    height: 35vh;
+    width: 100vw;
+    text-align: center;
+    
+}
+
+
+
+.project-box>div{
+    height: 200px;
+    width: 200px;
     background-color: gray;
     display: flex;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid black;
+    
+}
+.technologies{
+    display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 35vh;
+    align-items: center;
+   
+}
+.technology-box{
+  display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    
+
+}
+.technology-box>img{
+    width: 90px;
+}
+.contact-box {
+   display: flex;
+    border: 2px solid black;
+    justify-content: space-around;
+    
+    
+
+}
+.contact-me{
+    display: flex;
+    height: 70vh;
+    background-color: #ffffff;
+        background-image: -webkit-linear-gradient(780deg, #ffffff 50%, #707070 50%);
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        width:100vw;
+        
+}
+.contact-pic>img{
+    width: 15vw;
+    margin: 40px;
+}
+.contact-title{
+    margin-top: 300px;
 }
 
+/* js */
+.enlargeArea {
+    color: white;
+    background: green;
+    padding: 0px;
+    border: 1px solid black;
+}
 
-.contact-me{
-    height: 100vh;
-    background-color: #ffffff;
-        background-image: -webkit-linear-gradient(20deg, #ffffff 50%, #707070 50%);
+.box-border {
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 1px solid black;
+    margin: 10px;
+    transition: 1s;
 }
