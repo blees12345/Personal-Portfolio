@@ -2,17 +2,16 @@
     margin: 0;
     padding: 0;
     border: 0;
-    border: px solid black ;
-    
+    border: 0px solid black ;
 }
 body{
     height: 100vh;
+    width: 100vw;
 }
 
 h1{
     font-size: 3em;
     text-align: center;
-
 }
 a{
     font-size: 1.4em;
@@ -21,8 +20,8 @@ a{
 
 }
 .header{
-    background-color: #ffffff;
-     
+    background-color: #ffffff;  
+    
 }
 nav{
     display: flex;
@@ -30,8 +29,7 @@ nav{
     text-align: center;
 }
 li{
-    list-style: none;
-    
+    list-style: none; 
 }
 .sticky{
     position: fixed;
@@ -60,30 +58,34 @@ background-image: -webkit-linear-gradient(240.8deg, #ffffff 50%, #707070 50%);
 display: flex;
 flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .project-box{
     display: flex;
     justify-content:space-around;
-    
     height: 35vh;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     
 }
-
-
+.box-border{
+    display: flex;
+    flex-direction: column-reverse;   
+}
 
 .project-box>div{
-    height: 200px;
-    width: 200px;
+    height: 20vw;
+    width: 20vw;
     background-color: gray;
     display: flex;
     text-align: center;
-    margin: 20px;
     border: 2px solid black;
     
 }
+
+/* --------- */
+
 .technologies{
     display: flex;
         justify-content: space-around;
@@ -91,26 +93,26 @@ flex-direction: column;
         text-align: center;
         height: 35vh;
     align-items: center;
+    width: 90vw;
    
 }
 .technology-box{
   display: flex;
     justify-content: space-around;
     width: 100vw;
-    
-
 }
+
 .technology-box>img{
     width: 90px;
 }
+
 .contact-box {
    display: flex;
     border: 2px solid black;
     justify-content: space-around;
-    
-    
-
+    width: 90vw;
 }
+
 .contact-me{
     display: flex;
     height: 70vh;
@@ -146,4 +148,31 @@ flex-direction: column;
     border: 1px solid black;
     margin: 10px;
     transition: 1s;
+}
+
+/* Modal */
+.modal{
+    display: none;
+    position: absolute;
+   z-index: 1;
+    width: 80vw;
+    height: 20vh;
+ background-color: rgb(62, 62, 62);  
+ float: left;
+ left: 50%;
+ top: 220%;
+transform: translate(-50%, -50%);
+padding-top: 40px;
+margin-bottom: 40px;
+font-size: 30px;
+color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.emailinput, .submit,.messege{
+    font-size: 20px;
+    height: 30px;
 }

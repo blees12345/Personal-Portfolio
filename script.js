@@ -1,9 +1,27 @@
 let enlargeArea = document.querySelector('.project-box');
-let areaBox = document.querySelectorAll('.box-border')
+let areaBox = document.querySelectorAll('.box-border');
 
-enlargeArea.addEventListener('mouseover', function () {
-	for (let i = 0; i < areaBox.length; i++) {
-		areaBox[i].style.borderWidth = '10px';
-	}
-    console.log('mosue over')
-});
+
+
+// modal
+// let userEmail = ""
+let modal = document.querySelector('.modal')
+let email = document.querySelector('.email');
+let closeEmail = document.querySelector('.submit');
+
+
+
+email.onclick = function(){
+	modal.style.display = "block"
+}
+
+closeEmail.onclick = function(e){
+	e.preventDefault();
+	modal.style.display = "none";
+	userEmail = document.querySelector('.emailinput').value;
+}
+// save email as variable
+closeEmail.addEventListener('click', function(){
+	userEmail 
+	console.log(userEmail)
+})
