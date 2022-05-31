@@ -2,10 +2,9 @@ let enlargeArea = document.querySelector('.project-box');
 let areaBox = document.querySelectorAll('.box-border');
 
 enlargeArea.addEventListener("mouseover",function(event){
-	event.target.style.border = "thick solid gray"
-	
+	event.target.style.border = "thick solid gray";
+	body.classList.add('.project-box')
 })
-
 
 
 // modal

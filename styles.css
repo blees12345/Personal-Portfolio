@@ -146,11 +146,11 @@ flex-direction: column;
 }
 
 /* js */
-.enlargeArea {
-    color: white;
-    background: rgb(255, 255, 255);
-    padding: 0px;
-    border: 1px solid black;
+.project-box {
+    border: 5px solid rgb(255, 255, 255);
+   transition-duration: 3s;
+   transition: 2s;
+   
 }
 
 .box-border {
@@ -159,7 +159,7 @@ flex-direction: column;
     background: red;
     border: 1px solid black;
     margin: 10px;
-    transition: 1s;
+    transition-duration: 2s;
 }
 
 /* Modal */
