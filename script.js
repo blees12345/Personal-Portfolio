@@ -1,10 +1,15 @@
 let enlargeArea = document.querySelector('.project-box');
 let areaBox = document.querySelectorAll('.box-border');
 
+enlargeArea.addEventListener("mouseover",function(event){
+	event.target.style.border = "thick solid gray"
+	
+})
+
 
 
 // modal
-// let userEmail = ""
+
 let modal = document.querySelector('.modal')
 let email = document.querySelector('.email');
 let closeEmail = document.querySelector('.submit');
