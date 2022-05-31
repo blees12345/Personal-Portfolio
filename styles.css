@@ -156,8 +156,7 @@ flex-direction: column;
 .box-border {
     width: 50px;
     height: 50px;
-    background: red;
-    border: 1px solid black;
+    border: 30px solid rgb(0, 0, 0);
     margin: 10px;
     transition-duration: 2s;
 }
@@ -210,9 +209,9 @@ form{
 
 /* desktop */
 
-@media  (min-width:600px){
+@media  (min-width:700px){
     .aboutme-3{
-        width: 70rem;
+        width: 50rem;
     }
     .project-box>div{
         width:10rem;
