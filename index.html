@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="home">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="/script.js"></script>
     <link rel="stylesheet" href="/styles.css">
     <title>Adrian Guia</title>
-</head id="home">
+</head>
 <body>
     <main>
     <h1>Adrian Guia</h1>
     <header class="header">
-        <nav class="navBar">
+        <nav>
+            <ul class="navBar">
         <li><a href="#home"> Home</a></li>
         <li><a href="">About Me</a></li>
         <li><a href="https://docs.google.com/document/d/e/2PACX-1vT640J0M4s0uDKz691NbnscHtf4KyeN4bMvAZvcORhR3yJxaV9zILGHsSXVCa1iL-VkuL-kYv9hrwPd/pub">Resume</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact-me">Contact</a></li>
+        </ul>
     </nav>
     </header>
      
@@ -25,7 +27,7 @@
     <div class="about-me" id="about-me">
         <div class="aboutme-box">
           <div class="aboutme-1">
-            <img class ="profile-pic"src="/pictures/profile.jpeg" alt="html logo">
+            <img class ="profile-pic" src="/pictures/profile.jpeg" alt="html logo">
             </div>
         </div>
             <h2 class="aboutme-2">About Me</h2>
@@ -63,9 +65,9 @@ I am able to resolve problems  for various scenarios and clientele which is why 
              <div class="modal">
                  <form> 
                      <label for="Email">Email:</label>
-                     <input class="emailinput" type="text">
-                     <label  for="messege">messege</label>
-                     <input class="messege">
+                     <input name="email input" class="emailinput" type="text">
+                     <label for="messege">Message</label>
+                     <input name="message input" class="messege">
                      <button 
                      class="submit">Submit</button>
                  </form>
