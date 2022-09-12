@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="home">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="/script.js"></script>
     <link rel="stylesheet" href="/styles.css">
     <title>Adrian Guia</title>
-</head id="home">
+</head>
 <body>
+    <main>
     <h1>Adrian Guia</h1>
     <header class="header">
-        <nav class="navBar">
-        <li><a href="#home"> Home</a></li>
-        <li><a href="#about-me">About Me</a></li>
+        <nav>
+            <ul class="navBar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="">About Me</a></li>
+        <li><a href="https://docs.google.com/document/d/1Mkcx69hVoW0IVZy6Z1UxSQqLJkjp4HDnXDRhmFVyV2I/edit">Resume</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
+        <li><a href="#contact-me">Contact</a></li>
+        </ul>
     </nav>
     </header>
      
@@ -23,33 +27,56 @@
     <div class="about-me" id="about-me">
         <div class="aboutme-box">
           <div class="aboutme-1">
-            <img class ="profile-pic"src="/profile.jpeg" alt="Picture of me standing next to a shark">
+            <img class ="profile-pic" src="/pictures/profile.jpeg" alt="html logo">
             </div>
         </div>
             <h2 class="aboutme-2">About Me</h2>
-        <p class="aboutme-3"> AN aspiring software engineer with  an extensive background in hospitality and customer service.  I am able to adapt to high stress environments and am great at working in a team.
+        <p class="aboutme-3"> An aspiring software engineer with  an extensive background in hospitality and customer service.  I am able to adapt to high stress environments and am great at working in a team.
 I am able to resolve problems  for various scenarios and clientele which is why I am able to deliver  astounding customer service.
         </p>
-          
+            <!-- projects -->
     </div>
         <div class="projects" id="projects">
+            <h2>Projects</h2>
             <div class="project-box">
-                <div>Project 1</div>
-                <div>Project 2</div>
-                <div>Project 3</div>
+                 <a href="https://github.com/blees12345/Recipe-finder">
+                <div class="box-border">
+                    Recipe Finder </div> </a>
+                    <a href="https://github.com/re-do-it/front-end-repository">
+                <div class="box-border">Re-Do-It</div>
+                </a>
+                <a href="https://github.com/blees12345/Hello-World">
+                <div class="box-border">Hello World</div>
+                </a>
+            </div>
+            <div class="technologies">
+            <div class="technology-box">
+                <img src="/pictures/html.png" alt="html logo">
+                <img src="/pictures/css.png" alt=" css logo">
+                <img src="/pictures/js.png" alt="javascript picture">
+                <img src="/pictures/react.png">
+                <img src="/pictures/node-js.png">
+                <img src="/pictures/python.png">
             </div>
         </div>
-
+             </div>
+     
+                <!-- contact Me -->
         <div class="contact-me" id="contact-me">
+            <h2 class="contact-title">Contact Me :</h2>
+            
             <div class="contact-box">
-                <h2>Contact Me</h2>
-             <a href="https://www.linkedin.com/in/adrian-guia-985967228/">linkedin</a>
-             <a href="https://github.com/blees12345">Github</a>
-             <a href="Email:Adriang1702@gmail.com">Email</a><br>
+            <a class="contact-pic" href="https://www.linkedin.com/in/adrian-guia-985967228/"> 
+                 <img src="/pictures/linkedin.png" alt=""> </a>
+             <a class="contact-pic" href="https://github.com/blees12345"><img src="/pictures/github.png" alt="github"></a>
+             
+
+                
+    
             </div>
 
         </div>
-
+        </main>
     <footer></footer>
 </body>
 </html>
