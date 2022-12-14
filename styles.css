@@ -70,36 +70,55 @@ flex-direction: column;
     align-items: center;
     width: 100vw;
 }
-
+a.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
 .project-box{
     display: flex;
     justify-content:space-around;
     height: 35vh;
-    width: 100vw;
+    width: 99vw;
     text-align: center;
     font-size: 30px;
     align-items: center;
-   
+    margin: 0;
+    padding: 0;
 }
+
 .box-border{
     display: flex;
-    flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
     font-size: 4vw; 
 }
 div.box-border{
     display: flex;
     height: 20vh;
-    width: 20vw;
+    width: 100%;
     justify-content: center;
+    
 }
 .project-box>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 30vw;
-    width: 20vw;
+    width: 100%;
     background-color: gray;
     display: flex;
     text-align:center;
     border: 2px solid black;
 }
+div.project-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 
 /* --------- */
 
@@ -163,7 +182,7 @@ div.box-border{
 }
 
 .box-border {
-    width: 12vw;
+    width: 120%;
     height: 12vh;
     border: 4px solid rgb(0, 0, 0);
     margin: 10px;
@@ -193,20 +212,25 @@ div.box-border{
 
 /* desktop */
 
-@media  (min-width:700px){
+@media  (min-width:700px )and (max-width:1000px){
+    .about-me{
+        
+        height: 50vw;
+    }
     .aboutme-3{
         width: 50rem;
+         
     }
     .project-box>div{
         width:8vw;
 
     }
     .project-box{
-        width: 80vw;
+        width: 100%;
+       
     }
     .technology-box{
-        width:80vw;
-        
+        width:60vw;
     }
     .contact-box{
         width: 50vw;
@@ -214,6 +238,124 @@ div.box-border{
     .contact-pic>img{
         width: 6vw;
     }
-    
+    .contact-me{
+        height: 46vh;
+    }
+   .projects{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+   }
 
+div.project-box{
+    max-width: 65%;
+}
+.box-border{
+    width: 20%;
+}
+a.box{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: aqua;
+}
+div.box-border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+}
+}
+@media (min-width:1001px) and (max-width:1900px){
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .aboutme-3{
+       width: 70%;
+    }
+    .project-box{
+        width: 50vw;
+    }
+    .box{
+        height: 100%;
+    }
+    .box-border{
+        font-size: 40px;
+    }
+    .technology-box{
+        width: 70vw;
+    }
+   
+    .contact-box{
+        display: flex;
+        align-items: center;
+        width: 45%;
+        height: 30%;
+    }
+    a>img{
+       max-height: 100px;
+       max-width: 100px;
+    }
+}
+
+@media (min-width:1901px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+.aboutme-2{
+    margin-top: 20px;
+    font-size: 40px;
+}
+    .aboutme-3 {
+        margin-top: 50px;
+        width: 50%;
+        font-size: 25px;
+    }
+
+    .project-box {
+        width: 40%;
+        margin-top: 30px;
+        margin-bottom: 35px;
+       
+    }
+
+   
+
+    .box-border {
+         font-size: 25px;
+    }
+
+    .technology-box {
+        width: 40vw;
+    }
+
+    .contact-box {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        height: 25%;
+    }
+
+    a>img {
+        max-height: 80px;
+        max-width: 80px;
+    }
+    .technology-box>img{
+        height: 70px;
+        width: 70px;
+    }
 }
